@@ -18,3 +18,7 @@ yarn-error.log
 /.vscode
 .angular
 resources/frontend/dist
+.lando.yml
+lando
+public/build
+public/dev
