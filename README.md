@@ -7,6 +7,9 @@
    6. Run this in Window PowerShell:
       
    ``Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned``
+5. Add Environment Variable (https://stackoverflow.com/a/44958882)
+   6. Open Window Environment Variables
+   7. Under "Path" variable, made the FIRST value listed %AppData%\npm
 
 ## Setup source
 1. Place this source as C:\xampp\htdocs (or where you want)
