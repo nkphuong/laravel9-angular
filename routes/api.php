@@ -2,7 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\Api\ProductController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::prefix('product')->as('product.')->group(function (){
-    Route::get('',[\App\Http\Controllers\Api\ProductController::class,'index'])->name('index');
+Route::prefix('product')->as('product.')->group(function () {
+    Route::get('', [ProductController::class, 'index'])->name('index');
+    Route::get('/{product}', [ProductController::class, 'show'])->name('show');
 });

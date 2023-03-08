@@ -15,4 +15,8 @@ export class ProductService {
     getAll(apiUrl: string):Observable<Product[]>{
         return this.httpClient.get<Product[]>(environment.apiUrl + apiUrl).pipe()
     }
+
+    getOne(apiUrl: string):Observable<Product>{
+        return this.httpClient.get<Product>(environment.apiUrl + apiUrl).pipe()
+    }
 }
